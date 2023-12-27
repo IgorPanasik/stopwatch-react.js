@@ -1,0 +1,44 @@
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 270px;
+  width: 100%;
+  height: 270px;
+  border-radius: 50%;
+  border: 1px dashed rgb(59, 68, 95);
+  box-shadow: 18px 18px 31px rgb(212, 217, 225, 0.5),
+    -18px -18px 31px rgb(248, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.display .format-time {
+  padding: 5px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1050px) {
+  .display {
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
+  }
+
+  .display .format-time {
+    padding: 5px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .display {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .display .format-time {
+    padding: 5px;
+    font-size: 20px;
+  }
+}
